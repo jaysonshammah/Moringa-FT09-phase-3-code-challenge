@@ -31,6 +31,7 @@ def main():
 
     # Create a magazine
     cursor.execute('INSERT INTO magazines (name, category) VALUES (?,?)', (magazine_name, magazine_category))
+    cursor.execute('INSERT INTO magazines (name, category) VALUES (?,?)', (magazine_name, magazine_category))
     magazine_id = cursor.lastrowid # Use this to fetch the id of the newly created magazine
 
     # Create an article
